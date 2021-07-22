@@ -40,8 +40,12 @@ body {
   transition: transform 0.5s linear;
 }
 
-.container.show-nav .circle {
-  transform: rotate(-70deg);
+.container.show-nav + .circle-container {
+  transform: rotate(-90deg);
+}
+
+.container.show-nav ~ nav li {
+  transform: translate(0);
 }
 
 .circle button {
